@@ -4,6 +4,7 @@ filetype off
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+filetype plugin on
 
 execute
 
@@ -23,3 +24,6 @@ set number
 set visualbell
 set clipboard=unnamed
 set guifont=Monaco:h20
+
+"changes leader key
+let mapleader=","
