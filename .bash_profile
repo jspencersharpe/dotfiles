@@ -11,3 +11,4 @@ export PATH
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
