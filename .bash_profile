@@ -38,5 +38,6 @@ alias morning!='cd;
                 brew update;'
 
 alias budget='cd; bash ~/personal/productivity/scripts/budget.sh';
+alias browse='cd; bash ~/personal/productivity/scripts/browse.sh';
 
 export PS1="$txtcyn\u$txtred@$txtcyn\h $txtred\w $txtylw\$(status)$txtgrn\$(branch)$txtcyn:$txtrst \w $\n"
