@@ -17,6 +17,9 @@ status()
 {
   git status --porcelain 2> /dev/null | wc | awk '{if($1 > 0)print"+";}'
 }
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 
 alias code='cd ~/dev'
 alias sync='cd ~/dev/groupsync'
@@ -27,15 +30,17 @@ alias i="source ~/.bash_profile"
 alias gitconfig="atom ~/.gitconfig"
 alias gst="git status"
 
-alias rebase="git rebase -i master"
+alias rebase="git fetch origin && git rebase origin/master"
 alias updatemaster="git checkout master && rebase"
 alias startserver="npm start"
+alias undocommit="git reset --soft HEAD~"
 
 alias morning!='cd;
                 bash ~/personal/productivity/scripts/chrome.sh
                 bash ~/personal/productivity/scripts/apps.sh;
                 echo "brew update..."
-                brew update;'
+                brew update;
+                cd ~/dev'
 
 alias budget='cd; bash ~/personal/productivity/scripts/budget.sh';
 alias browse='cd; bash ~/personal/productivity/scripts/browse.sh';
