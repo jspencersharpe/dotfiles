@@ -21,18 +21,24 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
+# directory
 alias code='cd ~/dev'
 alias sync='cd ~/dev/groupsync'
+
+# server
 alias pss='python -m SimpleHTTPServer'
+alias startserver="npm start"
+
+# bash profile
 alias editprofile='atom ~/.bash_profile'
 alias i="source ~/.bash_profile"
 
+# git
 alias gitconfig="atom ~/.gitconfig"
 alias gst="git status"
-
+alias gco="git checkout"
 alias rebase="git fetch origin && git rebase origin/master"
 alias updatemaster="git checkout master && rebase"
-alias startserver="npm start"
 alias undocommit="git reset --soft HEAD~"
 
 alias morning!='cd;
