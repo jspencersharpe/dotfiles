@@ -24,6 +24,8 @@ fi
 # directory
 alias code='cd ~/dev'
 alias sync='cd ~/dev/groupsync'
+alias inn='cd ~/dev/groupinn'
+alias nom='cd ~/dev/grouponomics'
 
 # server
 alias pss='python -m SimpleHTTPServer'
@@ -37,7 +39,7 @@ alias i="source ~/.bash_profile"
 alias gitconfig="atom ~/.gitconfig"
 alias gst="git status"
 alias gco="git checkout"
-alias rebase="git fetch origin && git rebase origin/master"
+alias rebase="git fetch origin && git rebase -i origin/master"
 alias updatemaster="git checkout master && rebase"
 alias undocommit="git reset --soft HEAD~"
 
