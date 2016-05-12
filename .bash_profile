@@ -39,6 +39,9 @@ alias i="source ~/.bash_profile"
 alias gitconfig="atom ~/.gitconfig"
 alias gst="git status"
 alias gco="git checkout"
+__git_complete gco _git_checkout
+alias gb="git branch"
+__git_complete gb _git_branch
 alias rebase="git fetch origin && git rebase -i origin/master"
 alias updatemaster="git checkout master && rebase"
 alias undocommit="git reset --soft HEAD~"
