@@ -49,8 +49,8 @@ alias undocommit="git reset --soft HEAD~"
 alias morning!='cd;
                 bash ~/personal/productivity/scripts/chrome.sh
                 bash ~/personal/productivity/scripts/apps.sh;
-                echo "brew update..."
-                brew update;
+                echo "updates..."
+                bash ~/personal/productivity/scripts/update.sh;
                 cd ~/dev'
 
 alias budget='cd; bash ~/personal/productivity/scripts/budget.sh';
