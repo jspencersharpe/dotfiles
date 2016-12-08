@@ -26,6 +26,8 @@ alias code='cd ~/dev'
 alias sync='cd ~/dev/groupsync'
 alias inn='cd ~/dev/groupinn'
 alias nom='cd ~/dev/grouponomics'
+alias proposal='cd ~/dev/proposal_service'
+alias property='cd ~/dev/property_service'
 
 # server
 alias pss='python -m SimpleHTTPServer'
@@ -49,11 +51,13 @@ alias undocommit="git reset --soft HEAD~"
 alias morning!='cd;
                 bash ~/personal/productivity/scripts/chrome.sh
                 bash ~/personal/productivity/scripts/apps.sh;
-                echo "updates..."
-                bash ~/personal/productivity/scripts/update.sh;
                 cd ~/dev'
 
 alias budget='cd; bash ~/personal/productivity/scripts/budget.sh';
 alias browse='cd; bash ~/personal/productivity/scripts/browse.sh';
 
 export PS1="$txtcyn\u$txtred@$txtcyn\h $txtred\w $txtylw\$(status)$txtgrn\$(branch)$txtcyn:$txtrst \w $\n"
+if which rbenv > /dev/null;
+  then eval "$(rbenv init -)";
+fi
+export PATH="$HOME/.rbenv/bin:$PATH"
