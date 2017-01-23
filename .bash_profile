@@ -47,6 +47,7 @@ __git_complete gb _git_branch
 alias rebase="git fetch origin && git rebase -i origin/master"
 alias updatemaster="git checkout master && rebase"
 alias undocommit="git reset --soft HEAD~"
+alias clean="git checkout -- ."
 
 alias morning!='cd;
                 bash ~/personal/productivity/scripts/chrome.sh
