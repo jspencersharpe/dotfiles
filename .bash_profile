@@ -22,7 +22,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # directory
-alias code='cd ~/dev'
+alias dev='cd ~/dev'
 alias sync='cd ~/dev/groupsync'
 alias inn='cd ~/dev/groupinn'
 alias nom='cd ~/dev/grouponomics'
