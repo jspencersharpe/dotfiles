@@ -26,6 +26,7 @@ alias dev='cd ~/dev'
 alias sync='cd ~/dev/groupsync'
 alias inn='cd ~/dev/groupinn'
 alias nom='cd ~/dev/grouponomics'
+alias anal='cd ~/dev/analytics'
 alias proposal='cd ~/dev/proposal_service'
 alias property='cd ~/dev/property_service'
 
