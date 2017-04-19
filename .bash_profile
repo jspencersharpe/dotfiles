@@ -24,6 +24,7 @@ fi
 # directory
 alias dev='cd ~/dev'
 alias sync='cd ~/dev/groupsync'
+alias sink='cd ~/dev/groupsync-ng2'
 alias inn='cd ~/dev/groupinn'
 alias nom='cd ~/dev/grouponomics'
 alias anal='cd ~/dev/analytics'
