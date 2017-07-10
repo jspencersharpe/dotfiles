@@ -23,14 +23,6 @@ fi
 
 # directory
 alias dev='cd ~/dev'
-alias sync='cd ~/dev/groupsync'
-alias sink='cd ~/dev/groupsync-ng2'
-alias inn='cd ~/dev/admin'
-alias admin='cd ~/dev/admin'
-alias nom='cd ~/dev/grouponomics'
-alias anal='cd ~/dev/analytics'
-alias proposal='cd ~/dev/proposal_service'
-alias property='cd ~/dev/property_service'
 
 # server
 alias pss='python -m SimpleHTTPServer'
@@ -64,4 +56,4 @@ export PS1="$txtcyn\u$txtred@$txtcyn\h $txtred\w $txtylw\$(status)$txtgrn\$(bran
 if which rbenv > /dev/null;
   then eval "$(rbenv init -)";
 fi
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="usr/local/bin:${PATH}"
