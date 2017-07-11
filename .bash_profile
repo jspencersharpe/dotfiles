@@ -23,6 +23,7 @@ fi
 
 # directory
 alias dev='cd ~/dev'
+alias code='cd ~/247sports'
 
 # server
 alias pss='python -m SimpleHTTPServer'
